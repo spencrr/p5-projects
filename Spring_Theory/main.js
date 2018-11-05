@@ -1,4 +1,5 @@
 let nodes = [];
+
 function setup() {
     createCanvas(800, 800);
     strokeWeight(2);
@@ -29,7 +30,7 @@ function draw() {
     nodes.forEach(node => {
         node.update();
         node.view();
-        // node.applyForce(g);
+        node.applyForce(g);
     });
 
 }
